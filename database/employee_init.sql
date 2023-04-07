@@ -1,14 +1,3 @@
--- INSERT INTO employees (id, firstname, lastname, age, department, position) 
---         VALUES ('00000000', 'Emma Emma', 'Moore Smith', 49, 'Engineering', 'Developer');
--- INSERT INTO employees (id, firstname, lastname, age, department, position) 
---         VALUES ('00000001', 'Harper Harper', 'Anderson Johnson', 25, 'Human Resources', 'Assistant Manager');
--- INSERT INTO employees (id, firstname, lastname, age, department, position) 
---         VALUES ('00000002', 'Evelyn Mia', 'Wilson Jackson', 26, 'Human Resources', 'Designer');
--- INSERT INTO employees (id, firstname, lastname, age, department, position) 
---         VALUES ('00000003', 'Evelyn Charlotte', 'Wilson Wilson', 19, 'Legal', 'Assistant Manager');
--- INSERT INTO employees (id, firstname, lastname, age, department, position) 
---         VALUES ('00000004', 'Charlotte Harper', 'Smith Moore', 45, 'Operations', 'Senior Engineer')
-
 INSERT INTO employees (id, firstname, lastname, age, department, position, created_at, updated_at) VALUES
 ('00000000', 'Harper Amelia', 'Smith Anderson', 28, 'Human Resources', 'Developer', now(), now()),
 ('00000001', 'Emma Amelia', 'Anderson Smith', 41, 'Research and Development', 'Manager', now(), now()),

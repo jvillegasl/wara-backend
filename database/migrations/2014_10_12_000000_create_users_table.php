@@ -20,6 +20,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::unprepared(file_get_contents('database/user_init.sql'));
     }
 
     /**

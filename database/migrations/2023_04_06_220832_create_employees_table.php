@@ -22,7 +22,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::unprepared(file_get_contents('app/employee_init.sql'));
+        DB::unprepared(file_get_contents('database/employee_init.sql'));
     }
 
     /**
