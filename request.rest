@@ -1,0 +1,80 @@
+POST http://127.0.0.1:8000/api/auth/register
+content-type: application/json
+
+{
+    "name": "Javier Villegas",
+    "email": "jvillegasl@uni.pe",
+    "password": "password01"
+}
+
+### 
+
+POST http://127.0.0.1:8000/api/auth/login
+content-type: application/json
+
+{
+    "email": "jvillegasl@uni.pe",
+    "password": "password01"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/auth/me
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4MTM1MzIsImV4cCI6MTY4MDgxNzEzMiwibmJmIjoxNjgwODEzNTMyLCJqdGkiOiJVeEpueURnb0tPN0poWFJCIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CH--JfB3HBtOrz52bSw7niu_HIMWqN6jQRqYqvitpi8
+
+###
+
+GET http://127.0.0.1:8000/api/employee/all
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4MzI4MjUsImV4cCI6MTY4MDgzNjQyNSwibmJmIjoxNjgwODMyODI1LCJqdGkiOiJZcXdvallVbGlUak5xaUR0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2W6tLWoIPH2mQ-6lScuxqMp7LaaPcBN208DWBV2kRS8
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/employee/delete/123
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4MTc4NDMsImV4cCI6MTY4MDgyMTQ0MywibmJmIjoxNjgwODE3ODQzLCJqdGkiOiI5UkRUT3hIOHhVbkkyZmdIIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kL-nvoEwHVVDINzwutD-YYe99HNpIflJCEKPCauvQXY
+Accept: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/api/employee/update/123
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4MTc4NDMsImV4cCI6MTY4MDgyMTQ0MywibmJmIjoxNjgwODE3ODQzLCJqdGkiOiI5UkRUT3hIOHhVbkkyZmdIIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kL-nvoEwHVVDINzwutD-YYe99HNpIflJCEKPCauvQXY
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/employee/all
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4MjQzNDAsImV4cCI6MTY4MDgyNzk0MCwibmJmIjoxNjgwODI0MzQwLCJqdGkiOiJtU3VLNmFSYXVoelNvT1pHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pL0lY_GrKC7QDh2q46IC30p3R1020QlkvZtXRAW7o20
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/employee/delete/00000051
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4Mjg4MjksImV4cCI6MTY4MDgzMjQyOSwibmJmIjoxNjgwODI4ODI5LCJqdGkiOiJhQ21hbXlBSHRZUDZXT0dvIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.m-P5P7xyt_7fNxqH14MLynAPUShWLkP5la30pA4mmMM
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/employee/new
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4Mzk3ODAsImV4cCI6MTY4MDg0MzM4MCwibmJmIjoxNjgwODM5NzgwLCJqdGkiOiJqSDlNNk9Oc2xRT2xHMHJmIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2rgJLDka8fH3GamG4aJOQnNfwgO4aIBVEx9O4rAV_5w
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "00000051",
+    "firstname": "Javier",
+    "lastname": "Villegas",
+    "age": 22,
+    "department": "Web",
+    "position": "Fullstack"
+}
+
+###
+
+PATCH http://127.0.0.1:8000/api/employee/update/00000050
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODA4Mjg4MjksImV4cCI6MTY4MDgzMjQyOSwibmJmIjoxNjgwODI4ODI5LCJqdGkiOiJhQ21hbXlBSHRZUDZXT0dvIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.m-P5P7xyt_7fNxqH14MLynAPUShWLkP5la30pA4mmMM
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "Aronis4"
+}
